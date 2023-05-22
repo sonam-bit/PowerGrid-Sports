@@ -1,0 +1,147 @@
+html,body{
+    margin:0;
+    height:100vh;
+    width:100vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.container1 {
+    background-color: #04A559;
+}
+.preHeader {
+    font-family: 'Poppins', arial, sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.31;
+    z-index: 9;
+    position: relative;
+}
+.preHeaderWrap{
+    margin-right: 2.5vw;
+}
+.preHeader .container1 {
+    position: relative;
+    margin:0;
+    width: 100vw;
+}
+
+li{
+    padding-left:5px;
+}
+.topLinks {
+    list-style: none;
+    margin: 0;
+    display: inline-flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background-color: #04A559;
+    padding-left: 30px;
+    color: #fff;
+}
+.middle-navbar{
+    display: flex;
+    justify-content: space-around;
+}
+@media (max-width: 1023px)
+{
+    .topLinks {
+        padding-left: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+       
+    }
+
+}
+
+.headerRight{
+    padding-top:4vh;
+    padding-bottom:4vh;
+    width:60vw;
+    position: relative;
+    z-index: 100;
+    clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 0 100%, 0 100%, 8% 0);
+    background-color: rgb(29, 67, 130);
+}
+
+.headerRightSticky{
+    padding-top:4vh;
+    padding-bottom:4vh;
+    width:100vw;
+    position:fixed;
+    z-index: 100;
+    top:0;
+    background-color: rgb(29, 67, 130);
+    overflow: hidden;
+}
+    
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+li{
+    list-style-type: none;
+}
+
+.headerRight a,.headerRightSticky a{
+        display: block;
+        text-decoration: none;
+        text-transform: capitalize;
+}
+.headerRight ul li a, .headerRightSticky ul li a{
+    margin-left:5px;
+    color:white;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.headerLogo{
+    background-color: white;
+    position: relative;
+    z-index: 100;
+    top: -10px;
+   width:40vw;
+   display: flex;
+   justify-content: end;
+   left:10px;
+   clip-path: polygon(92% 0, 100% 12%, 100% 100%, 0% 100%, 0 58%, 0% 0%);
+
+}
+
+.carousel-item img{
+   height:100vh;
+}
+.footer{
+    background-color: #04A559;
+    color: white;
+    padding-top:10px;
+    padding-bottom: 0;
+    margin:0;
+}
+
+.socialIcons li{
+    margin-left:10px;
+}
+.termsEnd{
+    background-color: rgb(29, 67, 130);
+    color: white;
+    width:70%;
+    height:15vh;
+    margin: 0;
+    clip-path: polygon(0 0, 100% 0, 87% 100%, 0% 100%);
+    letter-spacing: 2px;
+    font-weight: 300px;
+    font-size: smaller;
+  
+}
+.upwardArrow{
+
+    position:absolute;
+    bottom: 0;
+    right: 30px;
+}
+.hide{
+    display: none;
+}
